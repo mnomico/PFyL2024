@@ -26,6 +26,7 @@ buscarMayor([X | Resto], X):-
 %%%%%%%%%%%%
 
 % Caso base. Si la lista es vacía, entonces la lista resultado tiene como elemento solamente al mayor.
+% Acá es donde se pone el elemento mayor al final de la lista.
 % Hay que poner [] en el tercer parámetro para que quede bien porque sino a prolog le agarra una embolia.
 reemplazar([], Mayor, [Mayor]).
 
