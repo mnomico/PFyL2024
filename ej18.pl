@@ -12,7 +12,8 @@ insertado(N, [X | Resto], [X | Lista]):-
     X =< N,
     insertado(N, Resto, Lista).
 
-% Si la cabeza es mayor a N, entonces se inserta en la lista, se concatena el resto que faltaba a procesar y se termina el proceso con !.
+% Si la cabeza es mayor a N, entonces se inserta en la lista junto con el elemento que se estaba procesando, 
+% se concatena el resto que faltaba a procesar y se termina el proceso con !.
 insertado(N, [X | Resto], [N, X | Resto]):-
     X > N,
     !.
